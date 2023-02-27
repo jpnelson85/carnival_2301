@@ -27,4 +27,5 @@ class Ride
   @rider_log << rider
  end
 
+ def spending_money
 end
