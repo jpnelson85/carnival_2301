@@ -17,5 +17,14 @@ class Ride
     0
  end
 
+ def board_rider
+  rider = Rider.new({
+    height: height,
+    name: name,
+    preferences: preferences,
+    spending_money: spending_money
+  })
+  @rider_log << rider
+ end
 
 end
