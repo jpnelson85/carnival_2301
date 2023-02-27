@@ -23,9 +23,12 @@ RSpec.describe Visitor do
   end
 
   it 'tall_enought? method' do
-
-
-
-    
+    visitor1 = Visitor.new('Bruce', 54, '$10')
+    visitor2 = Visitor.new('Tucker', 36, '$5')
+    visitor3 = Visitor.new('Penny', 64, '$15')
+    expect(visitor1.tall_enough?(54)).to eq(true)
+    expect(visitor2.tall_enough?(54)).to eq(false)
+    expect(visitor3.tall_enough?(54)).to eq(true)
+    expect(visitor1.tall_enough?(64)).to eq(false)
   end
 end
